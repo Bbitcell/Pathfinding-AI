@@ -551,8 +551,16 @@ public class Window extends JPanel implements ActionListener, MouseInputListener
 			
 
 		
+		for (int i = 0 ; i < game_board_matrix.length ; i++ )
+		{
+			for (int j = 0 ; j < game_board_matrix[i].length ; j++)
 
-        new_target = true;
+			{
+				game_board_matrix [i] [j]  = 0;
+			}
+		}
+        
+                new_target = true;
         
 		
 		food_x_position = e.getX();
